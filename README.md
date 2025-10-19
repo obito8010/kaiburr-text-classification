@@ -1,3 +1,7 @@
+Here’s a **professional and clean README** with placeholders for your **7 screenshots** and **1 main GIF**, including concise descriptions. Screenshots are shown small, and the GIF prominently to illustrate the working app.
+
+---
+
 # Kaiburr Text Classification (Task 5 – Data Science)
 
 **Candidate:** Chinmay Saseendran
@@ -37,26 +41,24 @@ kaiburr-text-classification/
 │
 ├── app/
 │   └── app.py
-│
 ├── data/
 │   └── consumer_complaints_sample_balanced.csv
-│
 ├── model/
 │   ├── logistic_regression_model.pkl
 │   └── tfidf_vectorizer.pkl
-│
 ├── notebooks/
 │   ├── data_cleaning.ipynb
 │   ├── eda_analysis.ipynb
 │   └── model_training.ipynb
-│
 ├── screenshots/
-│   ├── eda_wordclouds.png
-│   ├── model_accuracy_chart.png
-│   ├── confusion_matrix.png
-│   ├── streamlit_ui.png
-│   └── streamlit_prediction.png
-│
+│   ├── dataset_head.png
+│   ├── dataset_model.png
+│   ├── number_of_samples.png
+│   ├── number_of_words.png
+│   ├── average_word_count.png
+│   ├── common_words.png
+│   ├── ui_view.png
+│   └── working_demo.gif
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -125,6 +127,48 @@ Then open **[http://localhost:8501](http://localhost:8501)** in your browser.
 
 ---
 
+## Screenshots and Demo
+
+### Dataset and Model Insights
+
+<div align="center">
+
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Dataset_Head_items.png" width="200" />  
+*Head of the dataset showing initial rows and columns.*
+
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Dataset_model.png" width="200" />  
+*Overview of the dataset and model structure.*
+
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Number_Of_Samples.png" width="200" />  
+*Number of samples per category after balancing.*
+
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Number_of_Words.png" width="200" />  
+*Total number of words in the dataset.*
+
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Average_word_count.png" width="200" />  
+*Average word count per complaint.*
+
+<img src="screenshots/common_words.png" width="200" />  
+*Most frequent words in each category.*
+
+<img src="screenshots/ui_view.png" width="200" />  
+*UI view of the Streamlit app.*
+
+</div>
+
+---
+
+### Demo of Working App
+
+<div align="center">
+
+<img src="screenshots/working_demo.gif" width="600" />  
+*Animated demonstration showing how the app accepts text input and provides category predictions in real time.*
+
+</div>
+
+---
+
 ## Technologies Used
 
 | Category          | Tools                                                                         |
@@ -148,8 +192,13 @@ Then open **[http://localhost:8501](http://localhost:8501)** in your browser.
 
 ## Final Remarks
 
-This project covers the complete data science workflow — from **data preprocessing** and **model training** to **web deployment**.
+This project demonstrates the full data science workflow — from **data preprocessing** and **model training** to **web deployment**.
 
 **Final Model Accuracy:** 88.2%
 **Best Model:** Logistic Regression (TF-IDF)
 
+---
+
+If you want, I can **also adjust the layout so all screenshots are neatly in a 2-row grid** with captions — it looks more professional on GitHub instead of one row.
+
+Do you want me to do that?
