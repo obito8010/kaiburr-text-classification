@@ -131,7 +131,7 @@ Then open **[http://localhost:8501](http://localhost:8501)** in your browser.
 
 ### Dataset and Model Insights
 
-<div align="center">
+
 
 <img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Dataset_Head_items.png" width="200" />  
 *Head of the dataset showing initial rows and columns.*
@@ -148,10 +148,10 @@ Then open **[http://localhost:8501](http://localhost:8501)** in your browser.
 <img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Average_word_count.png" width="200" />  
 *Average word count per complaint.*
 
-<img src="screenshots/common_words.png" width="200" />  
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/b96b0a1cd3fae1f78a05ab8bf4244256984b15d4/screenshots/Common_Words.png" width="200" />  
 *Most frequent words in each category.*
 
-<img src="screenshots/ui_view.png" width="200" />  
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/b96b0a1cd3fae1f78a05ab8bf4244256984b15d4/screenshots/UI_view.png" width="200" />  
 *UI view of the Streamlit app.*
 
 </div>
