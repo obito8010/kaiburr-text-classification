@@ -1,157 +1,155 @@
-# 💬 Kaiburr Text Classification (Task 5 – Data Science)
+# Kaiburr Text Classification (Task 5 – Data Science)
 
-**Candidate: CHINMAY SASEENDRAN** 
-**Submission Date:** [20/10/2025]
+**Candidate:** Chinmay Saseendran
+**Submission Date:** October 20, 2025
 
-----------------------------------------------------------
+---
 
-## 🧠 Project Overview
+## Project Overview
 
-This project is built as part of the **Kaiburr Recruitment Assessment (Task 5 – Data Science)**.  
-The goal is to classify **consumer complaint texts** into one of four categories using machine learning and natural language processing (NLP) techniques.
+This project was developed as part of the **Kaiburr Recruitment Assessment (Task 5 – Data Science)**.
+The objective is to build a machine learning model that classifies **consumer complaint texts** into one of four categories.
 
 **Categories:**
-1. Credit Reporting  
-2. Debt Collection  
-3. Consumer Loan  
-4. Mortgage  
 
------------------------------------------------------------
+1. Credit Reporting
+2. Debt Collection
+3. Consumer Loan
+4. Mortgage
 
-## 🚀 Project Phases
+---
 
-| Phase | Description | Status |
-|-------|--------------|--------|
-| **1. Setup** | Project folder structure, environment, Git initialization | ✅ Completed |
-| **2. Data Cleaning** | Read, clean, and balance dataset (≈20k rows, 5k/class) | ✅ Completed |
-| **3. Model Training** | Train multiple models (Logistic Regression, Naive Bayes, Random Forest) |✅ Completed |
-| **4. Streamlit App** | Deploy best model for live predictions | ✅ Completed |
+## Project Phases
 
------------------------------------------------------------
+| Phase                 | Description                                                    | Status    |
+| --------------------- | -------------------------------------------------------------- | --------- |
+| **1. Setup**          | Initialized project structure, environment, and Git repository | Completed |
+| **2. Data Cleaning**  | Processed and balanced dataset (≈20k rows, 5k per class)       | Completed |
+| **3. Model Training** | Trained and compared multiple ML models                        | Completed |
+| **4. Streamlit App**  | Deployed best-performing model for live predictions            | Completed |
 
-## 📁 Project Structure
+---
+
+## Project Structure
+
+```
 kaiburr-text-classification/
 │
 ├── app/
-│ └── app.py
+│   └── app.py
 │
 ├── data/
-│ └── consumer_complaints_sample_balanced.csv
+│   └── consumer_complaints_sample_balanced.csv
 │
 ├── model/
-│ ├── logistic_regression_model.pkl
-│ └── tfidf_vectorizer.pkl
+│   ├── logistic_regression_model.pkl
+│   └── tfidf_vectorizer.pkl
 │
 ├── notebooks/
-│ ├── data_cleaning.ipynb
-│ ├── eda_analysis.ipynb
-│ └── model_training.ipynb
+│   ├── data_cleaning.ipynb
+│   ├── eda_analysis.ipynb
+│   └── model_training.ipynb
 │
 ├── screenshots/
-│ ├── eda_wordclouds.png
-│ ├── model_accuracy_chart.png
-│ ├── confusion_matrix.png
-│ ├── streamlit_ui.png
-│ └── streamlit_prediction.png
+│   ├── eda_wordclouds.png
+│   ├── model_accuracy_chart.png
+│   ├── confusion_matrix.png
+│   ├── streamlit_ui.png
+│   └── streamlit_prediction.png
 │
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
------------------------------------------------------------
+---
 
-## Phase 1 – Data Cleaning Summary
+## Phase 1 – Data Cleaning
 
-- Cleaned and combined large complaint CSV file in chunks  
-- Filtered 4 major complaint types  
-- Balanced each class to **5,000 samples** (20,000 total)  
-- Saved final dataset as `consumer_complaints_sample_balanced.csv`
+* Processed a large consumer complaints dataset in chunks
+* Extracted and filtered the top four complaint categories
+* Balanced each class to **5,000 samples** (20,000 total)
+* Saved the cleaned dataset as `consumer_complaints_sample_balanced.csv`
 
- **Tools used:** `pandas`, `numpy`  
- **Techniques:** chunk reading, text cleaning, class balancing, sampling  
+**Tools:** pandas, numpy
+**Techniques:** text preprocessing, sampling, data balancing
 
------------------------------------------------------------
+---
 
-## Phase 2 – Model Training & Evaluation
+## Phase 2 – Model Training and Evaluation
 
-| Model | Accuracy |
-|--------|-----------|
+| Model               | Accuracy  |
+| ------------------- | --------- |
 | Logistic Regression | **88.2%** |
-| Naive Bayes | 84.7% |
-| Random Forest | 80.1% |
+| Naive Bayes         | 84.7%     |
+| Random Forest       | 80.1%     |
 
- **Best Model:** Logistic Regression (TF-IDF features)  
- **Vectorizer:** TF-IDF (`max_features=5000`, bigrams)  
- **Artifacts Saved:**  
-- `/model/tfidf_vectorizer.pkl`  
-- `/model/logistic_regression_model.pkl`
+**Best Model:** Logistic Regression using TF-IDF features
+**Vectorizer:** TF-IDF (`max_features=5000`, including bigrams)
+**Saved Artifacts:**
 
-**Visuals:**
-- Confusion Matrix  
-- Accuracy Comparison Chart  
+* `/model/tfidf_vectorizer.pkl`
+* `/model/logistic_regression_model.pkl`
 
-> Logistic Regression achieved 88.2% accuracy, showing strong performance on this 4-class problem.
+**Highlights:**
 
------------------------------------------------------------
+* Logistic Regression achieved **88.2% accuracy**, making it the most reliable for this classification task.
+* Evaluation included confusion matrix and model comparison charts.
 
+---
 
-## Phase 3 – Streamlit Web App
+## Phase 3 – Streamlit Web Application
 
-### Run Locally
+### Running Locally
 
 ```bash
 cd app
 streamlit run app.py
+```
 
-Then open http://localhost:8501 in your browser.
+Then open **[http://localhost:8501](http://localhost:8501)** in your browser.
 
-# Features
+**Features:**
 
-Input a complaint text
+* Accepts a consumer complaint text as input
+* Predicts one of four categories in real time
+* Displays model confidence and relevant details
 
-Predicts one of four categories instantly
+**Example Input:**
 
-Displays model details and confidence
+> "I found incorrect information on my credit report and the company refused to fix it."
 
-Example
+**Predicted Output:**
 
-Input: “I found incorrect information on my credit report and the company refused to fix it.”
+> Credit Reporting
 
-Output: Predicted Category: Credit Reporting
+---
 
------------------------------------------------------------
+## Technologies Used
 
-## Screenshots
+| Category          | Tools                                                                         |
+| ----------------- | ----------------------------------------------------------------------------- |
+| **Language**      | Python 3.10                                                                   |
+| **Libraries**     | pandas, scikit-learn, matplotlib, seaborn, nltk, joblib, wordcloud, streamlit |
+| **Modeling**      | TF-IDF + Logistic Regression                                                  |
+| **Visualization** | Matplotlib, Seaborn, WordCloud                                                |
+| **Deployment**    | Streamlit                                                                     |
 
+---
 
------------------------------------------------------------
+## Future Enhancements
 
-# Technologies Used
-Category	            Tools
-Language	            Python 3.10
-Libraries	            pandas, scikit-learn, matplotlib, seaborn, nltk, joblib, wordcloud, streamlit
-Modeling	            TF-IDF + Logistic Regression
-Visualization	        Matplotlib, Seaborn, WordCloud
-Deployment	            Streamlit
+* Tune Logistic Regression hyperparameters for better accuracy
+* Experiment with transformer-based embeddings (e.g., BERT)
+* Deploy the app on Streamlit Cloud or Hugging Face Spaces
+* Integrate live complaint data through an API
 
------------------------------------------------------------
-
-Possible Future Enhancements
-
-* Fine-tune Logistic Regression hyperparameters
-* Use BERT or other transformer-based embeddings
-* Deploy the Streamlit app to Streamlit Cloud or Hugging Face Spaces
-* Add real-time data ingestion (live complaint API)
-
------------------------------------------------------------
+---
 
 ## Final Remarks
 
-This project demonstrates the complete lifecycle of a data science task:
+This project covers the complete data science workflow — from **data preprocessing** and **model training** to **web deployment**.
 
-Data → Cleaning → EDA → Model Training → Deployment.
+**Final Model Accuracy:** 88.2%
+**Best Model:** Logistic Regression (TF-IDF)
 
-Accuracy Achieved: 88.2%
-Best Model: Logistic Regression (TF-IDF)
-
-Quality of both code and documentation has been maintained as per Kaiburr’s evaluation criteria.
