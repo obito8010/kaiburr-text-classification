@@ -132,6 +132,8 @@ Then open **[http://localhost:8501](http://localhost:8501)** in your browser.
 ### Dataset and Model Insights
 
 
+### Note: My name Chinmay is visible in the repository name within the screenshots, and the date and time are shown at the bottom-right corner for verification and authentication purposes.
+
 
 <img src="https://github.com/obito8010/kaiburr-text-classification/blob/862eba06c4560e35125d91e0c4e8ec39b391924a/screenshots/Dataset_Head_items.png" width="200" />  
 *Head of the dataset showing initial rows and columns.*
@@ -162,7 +164,7 @@ Then open **[http://localhost:8501](http://localhost:8501)** in your browser.
 
 <div align="center">
 
-<img src="screenshots/working_demo.gif" width="600" />  
+<img src="https://github.com/obito8010/kaiburr-text-classification/blob/e49d512fe2047ec1b63bcc8b6c5c481f2e4113bd/screenshots/working_demo.gif" width="600" />  
 *Animated demonstration showing how the app accepts text input and provides category predictions in real time.*
 
 </div>
