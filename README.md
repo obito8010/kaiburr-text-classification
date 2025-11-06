@@ -198,9 +198,3 @@ This project demonstrates the full data science workflow — from **data preproc
 
 **Final Model Accuracy:** 88.2%
 **Best Model:** Logistic Regression (TF-IDF)
-
----
-
-If you want, I can **also adjust the layout so all screenshots are neatly in a 2-row grid** with captions — it looks more professional on GitHub instead of one row.
-
-Do you want me to do that?
